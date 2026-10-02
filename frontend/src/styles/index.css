@@ -1,0 +1,284 @@
+/* src/styles/index.css */
+/* CivicPulse — Smart Governance Platform Custom Styling */
+/* Clean, readable civic public service design */
+
+:root {
+  --civic-green: #198754;
+  --civic-dark-green: #0f5132;
+  --civic-light-green: #e8f5e9;
+  --civic-accent-green: #20c997;
+  --civic-bg: #f7faf7;
+  --civic-text: #212529;
+  --civic-border: #dee2e6;
+}
+
+body {
+  background-color: var(--civic-bg);
+  color: var(--civic-text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Civic Navbar */
+.civic-navbar {
+  background-color: var(--civic-dark-green) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.civic-brand-seal {
+  width: 32px;
+  height: 32px;
+  background-color: #ffffff;
+  color: var(--civic-dark-green);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.civic-nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.5rem 0.75rem !important;
+  border-radius: 4px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.civic-nav-link:hover,
+.civic-nav-link.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
+}
+
+.role-badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* Section headings */
+.section-title {
+  border-left: 4px solid var(--civic-green);
+  padding-left: 12px;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+/* Civic Cards */
+.civic-card {
+  border: 1px solid var(--civic-border);
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.civic-card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--civic-border);
+  padding: 1rem 1.25rem;
+  font-weight: 600;
+}
+
+/* Hero Section */
+.civic-hero {
+  background: linear-gradient(180deg, #ffffff 0%, var(--civic-light-green) 100%);
+  border-bottom: 1px solid var(--civic-border);
+  padding: 3rem 0;
+}
+
+/* Step cards */
+.step-card {
+  height: 100%;
+  border-left: 3px solid var(--civic-green);
+}
+
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: var(--civic-green);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+.civic-footer {
+  background-color: #212529;
+  color: #adb5bd;
+  margin-top: auto;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+.civic-footer hr {
+  border-color: #495057;
+}
+
+/* Civic tabs */
+.civic-tabs .nav-link {
+  color: #495057;
+  border-radius: 4px;
+}
+.civic-tabs .nav-link.active {
+  background-color: #198754 !important;
+  color: #fff !important;
+}
+
+/* Civic badge */
+.civic-badge {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+/* Stat Cards */
+.stat-card {
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  background: #fff;
+  padding: 1.25rem;
+  text-align: center;
+}
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.stat-card .stat-label {
+  font-size: 0.8rem;
+  color: #6c757d;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Simple Vertical Timeline */
+.timeline-list {
+  list-style: none;
+  padding-left: 24px;
+  margin: 0;
+  position: relative;
+  border-left: 2px solid #dee2e6;
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.25rem;
+}
+.timeline-dot {
+  position: absolute;
+  left: -31px;
+  top: 4px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #198754;
+  border: 2px solid #fff;
+  outline: 1px solid #198754;
+}
+.timeline-time {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+.timeline-by {
+  font-size: 0.75rem;
+  color: #6c757d;
+}
+
+/* Status badges */
+.status-PENDING    { background-color: #fff3cd; color: #664d03; }
+.status-ASSIGNED   { background-color: #cff4fc; color: #055160; }
+.status-IN_PROGRESS{ background-color: #cfe2ff; color: #084298; }
+.status-RESOLVED   { background-color: #d1e7dd; color: #0a3622; }
+.status-REOPENED   { background-color: #ffe5d0; color: #7d2600; }
+.status-CLOSED     { background-color: #e2e3e5; color: #41464b; }
+.status-REJECTED   { background-color: #f8d7da; color: #58151c; }
+
+/* Scrollable table wrapper */
+.table-scroll {
+  overflow-x: auto;
+}
+
+/* Compact section */
+.section-card {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+.section-card-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 0.85rem 1.25rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Map container */
+.map-container {
+  height: 300px;
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+/* Modal overlay (custom, no external lib) */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.modal-box {
+  background: #fff;
+  border-radius: 8px;
+  max-width: 640px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.modal-box-header {
+  border-bottom: 1px solid #dee2e6;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.modal-box-body {
+  padding: 1.25rem;
+}
+.modal-box-footer {
+  border-top: 1px solid #dee2e6;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}

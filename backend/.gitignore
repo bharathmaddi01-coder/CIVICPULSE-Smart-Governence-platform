@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Environment variables — never commit secrets
+.env
+
+# Uploaded files (if local storage is ever used)
+uploads/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor directories
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
